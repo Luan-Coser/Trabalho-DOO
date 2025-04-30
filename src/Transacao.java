@@ -16,8 +16,6 @@ public abstract class Transacao {
         this.data = data;
     }
 
-    public abstract double calcularImpacto(); // Polimorfismo
-
-    // Getters e Setters
+    public abstract double calcularImpacto(); // Classe abstrata com método abstrato
 }
 

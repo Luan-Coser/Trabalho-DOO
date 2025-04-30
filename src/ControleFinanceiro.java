@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ControleFinanceiro  implements Registravel {
-    private List<Transacao> transacoes;
+public class ControleFinanceiro implements Registravel {
+    private List<Transacao> transacoes; // Uso de Collection (ArrayList)
 
     public ControleFinanceiro() {
         transacoes = new ArrayList<>();
@@ -11,13 +11,13 @@ public class ControleFinanceiro  implements Registravel {
 
     @Override
     public void registrarTransacao(Transacao t) {
-        transacoes.add(t);
+        transacoes.add(t); // Polimorfismo: aceita Receita ou Despesa
     }
 
     public double calcularSaldo() {
         double saldo = 0;
         for (Transacao t : transacoes) {
-            saldo += t.calcularImpacto(); // Polimorfismo em ação
+            saldo += t.calcularImpacto(); // Polimorfismo em ação (método sobrescrito)
         }
         return saldo;
     }
@@ -25,7 +25,6 @@ public class ControleFinanceiro  implements Registravel {
     public List<Transacao> listarPorCategoria(String categoria) {
         return transacoes.stream()
                 .filter(t -> t.categoria.equalsIgnoreCase(categoria))
-                .collect(Collectors.toList());
+                .collect(Collectors.toList()); // Filtra por categoria
     }
 }
-
