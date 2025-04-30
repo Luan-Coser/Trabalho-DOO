@@ -20,44 +20,5 @@ Este projeto é um sistema simples de controle financeiro pessoal desenvolvido e
 O cenário escolhido foi um sistema simples para controle financeiro passoal, para mapear os gastos.
 
 ## Diagrama
-+----------------+       +----------------+       +------------------+
-|     Account    |<>-----|   Transaction  |<>-----|    Category      |
-+----------------+       +----------------+       +------------------+
-| - accountId    |       | - transactionId|       | - categoryName   |
-| - accountName  |       | - amount       |       | - description    |
-| - balance      |       | - date         |       +------------------+
-+----------------+       | - description  |        
-| + deposit()    |       | - category     |
-| + withdraw()   |       | - account      |
-| + getBalance() |       +----------------+  
-| + transferTo() |       | + executeTransaction()  |
-+----------------+       | + getTransactionDetails()|
-                         +--------------------------+     
-                               |
-                               |
-                               v
-                        +---------------+      
-                        |    Budget     |     
-                        +---------------+     
-                        | - budgetId    |     
-                        | - limit       |     
-                        | - currentAmount|    
-                        +---------------+     
-                        | + allocate()  |     
-                        | + setLimit()  |     
-                        | + checkIfOverBudget() |
-                        +---------------+     
-                               |
-                               v
-                        +---------------+  
-                        |     User      |  
-                        +---------------+  
-                        | - userId      |  
-                        | - name        |  
-                        | - email       |  
-                        +---------------+  
-                        | + addAccount()|  
-                        | + removeAccount()|
-                        | + setUserEmail()|
-                        +---------------+  
+![image](https://github.com/user-attachments/assets/dc647927-a967-4258-b2dd-ca3d9df0c8d1)
 
