@@ -1,6 +1,6 @@
 # Sistema de Controle Financeiro Pessoal
 
-Este projeto é um sistema simples de controle financeiro pessoal desenvolvido em Java, como atividade avaliativa da disciplina deDESENVOLVIMENTO DE SISTEMAS ORIENTADOS A OBJETOS (DOO) no curso de Ciência da Computação.
+Este projeto é um sistema simples de controle financeiro pessoal desenvolvido em Java, como atividade avaliativa da disciplina de DESENVOLVIMENTO DE SISTEMAS ORIENTADOS A OBJETOS (DOO) no curso de Ciência da Computação.
 
 ## 👨‍💻 Funcionalidades
 - Registro de receitas e despesas.
@@ -20,5 +20,5 @@ Este projeto é um sistema simples de controle financeiro pessoal desenvolvido e
 O cenário escolhido foi um sistema simples para controle financeiro passoal, para mapear os gastos.
 
 ## Diagrama
-![image](https://github.com/user-attachments/assets/dc647927-a967-4258-b2dd-ca3d9df0c8d1)
+![image](https://github.com/user-attachments/assets/81eb62c8-e9af-4986-b120-f6092229d309)
 
